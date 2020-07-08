@@ -1,30 +1,21 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-        <modelVersion>4.0.0</modelVersion>
-        <groupId>photography</groupId>
-        <artifactId>wild_photography</artifactId>
-        <version>1.1.0</version>
-        <packaging>war</packaging>
-        <name>main-home-page</name>
-        <description>Simplest possible Java Webapp</description>
-
-        <build>
-                <plugins>
-                        <plugin>
-                                <groupId>org.mortbay.jetty</groupId>
-                                <artifactId>jetty-maven-plugin</artifactId>
-                                
-                                <configuration>
-                                        <scanIntervalSeconds>0</scanIntervalSeconds>
-                                </configuration>
-                        </plugin>
-                        <plugin>
-                                <groupId>org.apache.maven.plugins</groupId>
-                                <artifactId>maven-war-plugin</artifactId>
-                                <version>2.1.1</version>
-                        </plugin>
-                </plugins>
-			
-        </build>
-
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.jenkins.demo</groupId>
+  <artifactId>JenkinsWar1</artifactId>
+  <packaging>war</packaging>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>JenkinsWar Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+  <build>
+    <finalName>JenkinsWar</finalName>
+  </build>
 </project>
